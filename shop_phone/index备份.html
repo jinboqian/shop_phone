@@ -1,0 +1,518 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>天下优品</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="Cache-Control" content="no-siteapp" />
+        <link rel="icon" type="image/png" href="/theme/default/images/favicon.png">
+		<link href="css/amazeui.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/iconfont.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/time.js"></script>
+		<script>
+                    $(function () {
+                        var elm = $('#shortbar');
+                        var startPos = $(elm).offset().top;
+                        $.event.add(window, "scroll", function () {
+                            var p = $(window).scrollTop();
+                            if (p > startPos) {
+                                elm.addClass('sortbar-fixed');
+                            } else {
+                                elm.removeClass('sortbar-fixed');
+                            }
+                        });
+                    });
+
+		</script>
+	</head>
+	<body>
+<!--图片轮换-->
+<div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0" style="position: relative;">
+	<header data-am-widget="header" class="am-header am-header-default tm-head" id="shortbar" >
+			<!--<div class="am-header-left am-header-nav">
+		        <a href="city.html" class="">
+			        <img src="images/city.png" />
+			        <p style="font-size: 12px; margin-top: -35px;">南昌</p>
+			    </a>
+		   </div>-->
+			<h1 class="am-header-title1">
+		        <div class="search-box">
+		           <input type="text" name="title" class="index-search" placeholder="寻找你喜欢的商品......" />
+		           <input type="submit" value="" class="search-icon" /> 
+		        </div>
+		    </h1>
+			<!--<div class="am-header-right am-header-nav">
+			    
+			    <a href="" class="">
+		           <img src="images/sao.png" />
+		           <p style="font-size: 12px; margin-top: -35px;">扫一扫</p>
+		        </a>
+			</div>-->
+        </header>
+  <ul class="am-slides">
+    <li><img src="images/index_slide_1.jpg" /></li>
+    <li><img src="images/index_slide_1.jpg" /></li>
+    <li><img src="images/index_slide_1.jpg" /></li>
+  </ul>
+</div>
+<!--导航-->
+ <ul class="sq-nav"  >
+      <li>
+        <div class="am-gallery-item">
+            <a href="newproduct.html" class="">
+              <img src="images/navicon01.png" />
+              <p>中国质造</p>
+            </a>
+        </div>
+      </li>
+      <li>
+        <div class="am-gallery-item">
+            <a href="specialprice.html" class="">
+              <img src="images/navicon02.png" />
+              <p>预售</p>
+            </a>
+        </div>
+      </li>
+      <li>
+        <div class="am-gallery-item">
+            <a href="reserve.html" class="">
+              <img src="images/navicon03.png" />
+              <p>拼团</p>
+            </a>
+        </div>
+      </li>
+      <li>
+        <div class="am-gallery-item">
+            <a href="integral.html" class="">
+              <img src="images/navicon04.png" />
+              <p>定制</p>
+            </a>
+        </div>
+      </li>
+ 
+
+   
+     
+  </ul>
+   <!-- 品牌专区-->
+  <div class="sq-title">
+ 	<i class="iconfont icon-diqiuguojihaiwai"></i>
+ 	<span class="sq-titlegtxt">我们的国际品牌制造商</span>
+ 	<a class="sq-title-more">更多>></a>
+ </div>
+  <ul data-am-widget="gallery" class="am-gallery pro-list am-avg-sm-2 am-avg-md-2 am-avg-lg-2 am-gallery-default"  >
+      <li class="global-li">
+        <div class="am-gallery-item">
+            <a href="detail.html" class="">
+              <img src="images/muji.jpg" />
+              <div class="global-title global-title01">MUJI</div>
+            </a>
+        </div>
+      </li>
+      <li class="global-li">
+      	<ul class="am-avg-sm-2 am-avg-md-2 am-avg-lg-2 am-gallery-default">
+      		<li class="global-li">
+      			<a>
+      				<img src="images/coach.jpg" class="global-img"/>
+      				 <div class="global-title global-title02">COACH</div>
+      			</a>
+      		</li>
+      		<li class="global-li">
+      			<a>
+      				<img src="images/nike.jpg" class="global-img" />
+      				 <div class="global-title global-title02">NIKE</div>
+      			</a>
+      		</li>
+      		<li class="global-li">
+      			<a>
+      				<img src="images/youyiku.jpg" class="global-img" />
+      				 <div class="global-title global-title02">优衣库</div>
+      			</a>
+      		</li>
+      		<li class="global-li">
+      			<a>
+      				<img src="images/muji.jpg" class="global-img" />
+      				<div class="global-title global-title02">新秀丽</div>
+      			</a>
+      		</li>
+      	</ul>
+     
+  </ul>
+ <!--限时秒杀 -->
+ <div class="sq-title">
+ 
+ 	<i class="iconfont icon-miaosha"></i>秒杀
+ 	<a class="sq-title-more">更多>></a>
+ 	<div class="clearfix"></div>
+ 	 </div>
+ 	<div class="fnTimeCountDown importanttxt txt-blod" data-end="2018/07/08 18:45:13">
+        8:00场<span class="sq-titlemarg normaltxt">距离结束还有</span>         
+        <span class="hour ">00</span>
+        <strong>:</strong>
+        <span class="mini ">00</span>
+        <strong>:</strong>
+        <span class="sec ">00</span>
+    </div>
+    
+    <script type="text/javascript">
+    $(".fnTimeCountDown").fnTimeCountDown("2018/07/08 18:45:13");
+    </script>
+
+  <ul data-am-widget="gallery" class="am-gallery pro-list am-avg-sm-3 am-avg-md-3 am-avg-lg-4 am-gallery-default"  >
+      <li>
+        <div class="am-gallery-item">
+            <a href="detail.html" class="">
+            	<div class="item-img-default">
+            		<img src="images/good01.png" />
+            	</div>
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+                <div class="am-gallery-desc">
+                	秒杀价:<span class="txt-blod importantprice">¥59</span>
+                	<span class="yuanjia">原价:¥109</span>
+                </div>
+            </a>
+        </div>
+      </li>
+      <li>
+        <div class="am-gallery-item">
+            <a href="detail.html" class="">
+              <div class="item-img-default">
+            		<img src="images/good02.png" />
+            	</div>
+             
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+                <div class="am-gallery-desc">
+                	秒杀价:<span class="txt-blod importantprice">¥59</span>
+                	<span class="yuanjia">原价:¥109</span>
+                </div>
+            </a>
+        </div>
+      </li>
+      <li>
+        <div class="am-gallery-item">
+            <a href="detail.html" class="">
+              <div class="item-img-default">
+            		<img src="images/good02.png" />
+            	</div>
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+                <div class="am-gallery-desc ">
+                	秒杀价:<span class="txt-blod importantprice">¥59</span>
+                	<span class="yuanjia">原价:¥109</span>
+                </div>
+            </a>
+        </div>
+      </li>
+  </ul>
+ <!-- 拼团-->
+  <div class="sq-title">
+ 	
+ 	<i class="iconfont icon-bingzhuangtu1"></i>
+ 	拼团
+ 	<a class="sq-title-more">更多>></a>
+ </div>
+  <ul data-am-widget="gallery" class="am-gallery pro-list am-avg-sm-3 am-avg-md-3 am-avg-lg-4 am-gallery-default"  >
+      <li>
+        <div class="am-gallery-item" style="text-align: center;">
+            <a href="detail.html" class="">
+               <div class="item-img-default">
+            		<img src="images/good02.png" />
+            	</div>
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+                <div class="pintuanbox">
+                	 <span class="pintuanwarp">
+                	<span class="pintuanjd" style="width: 60%;"></span>
+                	<span class="pintuanjdnum">60%</span>
+                </span>
+                <span>10人团</span>
+                </div>
+               
+                 <div class="importantprice txt-blod importanttxt">￥52</div>
+            </a>
+        </div>
+      </li>
+      <li>
+        <div class="am-gallery-item" style="text-align: center;">
+            <a href="detail.html" class="">
+              <div class="item-img-default">
+            		<img src="images/good02.png" />
+            	</div>
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+                <div class="pintuanbox">
+                	 <span class="pintuanwarp">
+                	<span class="pintuanjd" style="width: 60%;"></span>
+                	<span class="pintuanjdnum">60%</span>
+                </span>
+                <span>10人团</span>
+                </div>
+               
+           <div class="importantprice txt-blod importanttxt">￥52</div>
+            </a>
+        </div>
+      </li>
+       <li>
+        <div class="am-gallery-item" style="text-align: center;">
+            <a href="detail.html" class="">
+              <div class="item-img-default">
+            		<img src="images/good02.png" />
+            	</div>
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+                <div class="pintuanbox">
+                	 <span class="pintuanwarp">
+                	<span class="pintuanjd" style="width: 60%;"></span>
+                	<span class="pintuanjdnum">60%</span>
+                </span>
+                <span>10人团</span>
+                </div>
+               
+                <div class="importantprice txt-blod importanttxt">￥52</div>
+            </a>
+        </div>
+      </li>
+  </ul>
+  <!-- 预售-->
+  <div class="sq-title">
+ 	<i class="iconfont icon-yushouanxia"></i>
+ 	预售
+ 	<a class="sq-title-more">更多>></a>
+ </div>
+  <ul data-am-widget="gallery" class="am-gallery pro-list am-avg-sm-3 am-avg-md-3 am-avg-lg-4 am-gallery-default"  >
+      <li>
+        <div class="am-gallery-item" style="text-align: center;">
+            <a href="detail.html" class="">
+               <div class="item-img-default">
+            		<img src="images/good02.png" />
+            	</div>
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+                <div class="importantprice txt-blod importanttxt">￥52</div>
+            </a>
+        </div>
+      </li>
+      <li>
+        <div class="am-gallery-item" style="text-align: center;">
+            <a href="detail.html" class="">
+              <div class="item-img-default">
+            		<img src="images/good02.png" />
+            	</div>
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+                <div class="importantprice txt-blod importanttxt">￥52</div>
+            </a>
+        </div>
+      </li>
+       <li>
+        <div class="am-gallery-item" style="text-align: center;">
+            <a href="detail.html" class="">
+              <div class="item-img-default">
+            		<img src="images/good02.png" />
+            	</div>
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+                <div class="importantprice txt-blod importanttxt">￥52</div>
+            </a>
+        </div>
+      </li>
+  </ul>
+   <!-- 定制-->
+  <div class="sq-title">
+ 	<i class="iconfont icon-dingzhi"></i>
+ 	定制
+ 	<a class="sq-title-more">更多>></a>
+ </div>
+   <ul data-am-widget="gallery" class="am-gallery pro-list am-avg-sm-3 am-avg-md-3 am-avg-lg-4 am-gallery-default"  >
+      <li>
+        <div class="am-gallery-item" style="text-align: center;">
+            <a href="detail.html" class="">
+               <div class="item-img-default">
+            		<img src="images/good03.jpg" />
+            	</div>
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+                <div class="am-gallery-desc importantprice txt-blod">￥52</div>
+            </a>
+        </div>
+      </li>
+      <li>
+        <div class="am-gallery-item" style="text-align: center;">
+            <a href="detail.html" class="">
+              <div class="item-img-default">
+            		<img src="images/good03.jpg" />
+            	</div>
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+                <div class="am-gallery-desc importantprice txt-blod">￥52</div>
+            </a>
+        </div>
+      </li>
+       <li>
+        <div class="am-gallery-item" style="text-align: center;">
+            <a href="detail.html" class="">
+              <div class="item-img-default">
+            		<img src="images/good03.jpg" />
+            	</div>
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+                <div class="am-gallery-desc importantprice txt-blod">￥52</div>
+            </a>
+        </div>
+      </li>
+  </ul>
+   <!-- 定制-->
+  <div class="sq-title">
+ 	<i class="iconfont icon-ziyingdianbiao"></i>
+ 	中国质造
+ 	<a class="sq-title-more">更多>></a>
+ </div>
+   <ul data-am-widget="gallery" class="am-gallery pro-list am-avg-sm-3 am-avg-md-3 am-avg-lg-4 am-gallery-default"  >
+      <li>
+        <div class="am-gallery-item" style="text-align: center;">
+            <a href="detail.html" class="">
+               <div class="item-img-white">
+            		<img src="images/good02.png" />
+            	</div>
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+               <div class=" importantprice txt-blod defaulttxt">￥52</div>
+            </a>
+        </div>
+      </li>
+      <li>
+        <div class="am-gallery-item" style="text-align: center;">
+            <a href="detail.html" class="">
+              <div class="item-img-white">
+            		<img src="images/good02.png" />
+            	</div>
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+                <div class=" importantprice txt-blod defaulttxt">￥52</div>
+            </a>
+        </div>
+      </li>
+       <li>
+        <div class="am-gallery-item" style="text-align: center;">
+            <a href="detail.html" class="">
+              <div class="item-img-white">
+            		<img src="images/good02.png" />
+            	</div>
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+                <div class=" importantprice txt-blod defaulttxt">￥52</div>
+            </a>
+        </div>
+      </li>
+       <li>
+        <div class="am-gallery-item" style="text-align: center;">
+            <a href="detail.html" class="">
+               <div class="item-img-white">
+            		<img src="images/good02.png" />
+            	</div>
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+               <div class=" importantprice txt-blod defaulttxt">￥52</div>
+            </a>
+        </div>
+      </li>
+      <li>
+        <div class="am-gallery-item" style="text-align: center;">
+            <a href="detail.html" class="">
+              <div class="item-img-white">
+            		<img src="images/good02.png" />
+            	</div>
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+                <div class=" importantprice txt-blod defaulttxt">￥52</div>
+            </a>
+        </div>
+      </li>
+       <li>
+        <div class="am-gallery-item" style="text-align: center;">
+            <a href="detail.html" class="">
+              <div class="item-img-white">
+            		<img src="images/good02.png" />
+            	</div>
+                <h3 class="am-gallery-title">经典格纹丝毛混纺围巾</h3>
+                <div class=" importantprice txt-blod defaulttxt">￥52</div>
+            </a>
+        </div>
+      </li>
+  </ul>
+  <!-- 便民-->
+  <div class="sq-title">
+ 	<img src="images/bm.png" width="24"/>
+ 	便民服务
+ </div>
+ <ul class="yule">
+        <li>
+			<a href="news.html">
+				<img src="images/test.jpg">
+				<div style="width: 70%; float: left;">
+				<h3 class="title">青山湖区熊氏锁业</h3>
+				<p class="intro">开、修、换各式民用锁具（各类普通房门、防盗门、车库门、密码箱</p>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="news.html">
+				<img src="images/test.jpg">
+				<div style="width: 70%; float: left;">
+				<h3 class="title">青山湖区熊氏锁业</h3>
+				<p class="intro">开、修、换各式民用锁具（各类普通房门、防盗门、车库门、密码箱</p>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="news.html">
+				<img src="images/test.jpg">
+				<div style="width: 70%; float: left;">
+				<h3 class="title">青山湖区熊氏锁业</h3>
+				<p class="intro">开、修、换各式民用锁具（各类普通房门、防盗门、车库门、密码箱</p>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="news.html">
+				<img src="images/test.jpg">
+				<div style="width: 70%; float: left;">
+				<h3 class="title">青山湖区熊氏锁业</h3>
+				<p class="intro">开、修、换各式民用锁具（各类普通房门、防盗门、车库门、密码箱</p>
+				</div>
+			</a>
+		</li>
+ </ul>
+ <!--底部-->
+ <div style="height: 55px;"></div>
+ <div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default sq-foot am-no-layout" id="">
+      <ul class="am-navbar-nav am-cf am-avg-sm-4">   
+          <li class="nav-li">
+            <a href="index.html" class="curr">
+                <span class="iconfont icon-shouye-copy"></span>
+                <span class="am-navbar-label">首页</span>
+            </a>
+          </li>
+           <li class="nav-li">
+            <a href="category.html" class="">
+                <span class="iconfont icon-fenlei1"></span>
+                <span class="am-navbar-label">分类</span>
+            </a>
+          </li>
+       
+           <li class="nav-li">
+            <a href="shopcart.html" class="">
+                <span class="iconfont icon-baketb"></span>
+                <span class="am-navbar-label">购物车</span>
+            </a>
+          </li>
+           <li class="nav-li">
+            <a href="login.html" class="">
+                <span class="iconfont icon-wode1"></span>
+                <span class="am-navbar-label">我的55</span>
+            </a>
+          </li>
+      </ul>
+</div>
+ 
+ 
+ 
+ 
+ 
+ 
+<script src="js/jquery.min.js"></script>
+<script src="js/amazeui.min.js"></script>
+	</body>
+</html>
